@@ -1,0 +1,155 @@
+.activ{
+   margin: auto;
+   height: 740px;
+   border: 1px;
+   max-width: 1170px;
+   background: url("./bg/card.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   // justify-content: space-around;
+   // flex-direction: column;
+   // align-items: center;
+
+   &::after{
+content: "";
+   width: 1170px;
+   height: 740px;
+   background: rgba(37, 43, 73, 0.65);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   z-index: 100;
+   position: absolute;
+   display: flex;
+   flex-wrap: wrap;
+   }
+}
+.wrap{
+   padding: 0 30px;
+
+      .activ-box-wrap {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 0.5px rgb(214, 206, 206);
+      padding-top: $_36px;
+      margin-bottom: 50px;
+
+      .activ-box {
+         width: 210px;
+         flex-wrap: wrap;
+         .ativ-box-text{
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size:$_30px;
+            color: rgba(101, 105, 128, 1);
+            &::after{
+            content: "BOX";
+            font-family: 'Raleway';
+            font-size: $_30px;
+            font-weight: 400;
+            position: absolute;
+            color: $write;
+            }
+         }
+
+      }
+      .activ-nav {
+         width: 700px;
+         display: flex;
+         .nav-activ {  
+            width: 700px;       
+            display: flex;
+            justify-content: space-between;
+            .activ-nav-pac{
+               width: 134px;
+               display: block;
+               border-bottom: solid 3px  $blue_dark;                       
+                  &:hover{
+                  border-bottom: solid 3px $write;
+                  }
+                  &:active{
+                     border-bottom: solid 3px $red;
+                     
+                  }
+                  
+               .acriv-nav-pac-item {
+               
+                  display: block;
+               font-size: $_13px;
+               font-family: 'Raleway';
+               color: $write;
+               width: 136px;
+               height: 80px;
+               text-align: center;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+.caption {
+   margin-bottom: 32px;
+   .favor {
+      font-size: $_64px;
+      font-family: 'Raleway';
+      text-align: center;
+      color:$write;
+
+
+   }
+   
+   
+}
+.ativ-text {
+   margin-bottom: 80px;
+   .activ-text-content {
+      font-family:'Raleway';
+      text-align: center;
+      font-size: $_24px;
+      font-weight: 100 ;
+      color: rgb(197, 192, 192);
+   }
+}
+.button{
+   display: flex;
+   justify-content: center;
+   .mode {
+      height: 80px;
+      width: 370px;
+      cursor: pointer;
+      background-color: $red_light;
+      font-size: $_24px;
+      font-weight: 900;
+      color: $write;
+       &:hover{
+          background-color: $red;
+       }
+       &:active{
+          background-color: $red_light;
+          box-shadow: 0px 0px 25px 0px rgba(21, 208, 233, 0.65);
+       }
+   }
+}
+// .ativ-box-text{
+//    font-family: 'Raleway';
+//    font-weight: 700;
+//    font-size: $_24px;
+//    color: rgba(101, 105, 128, 1);
+//    &::after{
+//       content: "BOX";
+//       font-family: 'Raleway';
+//       font-size: $_24px;
+//       font-weight: 400;
+//       position: absolute;
+//       color: $write;
+//    }
+// }

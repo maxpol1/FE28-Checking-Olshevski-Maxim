@@ -1,0 +1,54 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+@import "font/fonts.scss";
+@import "color.scss";
+@import "font/variabl.scss";
+@import "header/header.scss";
+
+html {
+   font-family: 'Cardo', serif;
+   font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   background-color: $write;
+}
+header {
+   max-width: 1170px;
+   margin: auto;
+}
+section {
+   padding: 115px 0;
+   max-width: 1170px;
+   margin: auto;
+}
+
+.container {
+
+   max-width: 1170px;
+   padding: 0;
+   margin: 0;
+   position: relative;
+   z-index: 105;
+   flex-wrap: wrap;
+}
+
+.ativ-box-text{
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: $_24px;
+   color: rgba(101, 105, 128, 1);
+   &::after{
+      content: "BOX";
+      font-family: 'Raleway';
+      font-size: $_24px;
+      font-weight: 400;
+      position: absolute;
+      color: $write;
+   }
+
+}
